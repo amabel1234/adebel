@@ -326,7 +326,7 @@
       const mode = section.querySelector('input[name="nixx-obf-mode"]:checked')?.value || "light";
       run.disabled = true;
       run.textContent = "⏳ Memproses...";
-      setStatus("Mengobfuscate source dan mengirim arsip asli...", "loading");
+      setStatus("Mengobfuscate source Tunggu Sebentar...", "loading");
 
       try {
         const response = await fetch("/api/obfuscate", {
